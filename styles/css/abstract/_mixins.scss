@@ -1,0 +1,9 @@
+@mixin size-element($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin spacing($padding, $margin) {
+	padding: $padding;
+	margin: $margin;
+}
