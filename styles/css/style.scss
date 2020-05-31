@@ -1,6 +1,5 @@
 @import "./abstract/mixins";
 @import "./base/colours";
-@import "./base/reset";
 @import "./base/typography";
 
 html {
@@ -91,4 +90,13 @@ main {
 	background-image: url(../../multimedia/images/icon-calculator.svg);
 	@include bg-img(95% 95%, no-repeat, 10%);
 	@include spacing(0.5em, null);
+}
+
+footer {
+	@include size-element(100%, null);
+	@include spacing(0.5em, null);
+
+	a {
+		color: $veryDarkBlue;
+	}
 }
