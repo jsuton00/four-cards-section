@@ -1,1 +1,74 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+.container {
+  padding: 1em 1.5em;
+  margin: 0.25em auto;
+}
+
+.row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  padding: 0.5em;
+  font-weight: 200;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+h1 span::before {
+  content: "\A";
+  white-space: pre-line;
+}
+
+p {
+  font-weight: 200;
+}
+
+p span::before {
+  content: "\A";
+  white-space: pre-line;
+}
+
+.card-img:first-of-type {
+  background-image: url(../../multimedia/images/icon-supervisor.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
+}
+
+.card-img:nth-of-type(2) {
+  background-image: url(../../multimedia/images/icon-team-builder.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
+}
+
+.card-img:nth-of-type(3) {
+  background-image: url(../../multimedia/images/icon-karma.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
+}
+
+.card-img:last-of-type {
+  background-image: url(../../multimedia/images/icon-calculator.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
+}
+/*# sourceMappingURL=style.css.map */

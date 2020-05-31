@@ -1,0 +1,70 @@
+@import "./abstract/mixins";
+@import "./base/colours";
+@import "./base/typography";
+
+body {
+	background-color: $veryLightGray;
+	font-family: $poppins;
+}
+
+header {
+	@include size-element(100%, null);
+}
+
+.container {
+	@include spacing(1em 1.5em, 0.25em auto);
+}
+
+.row {
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	@include spacing(0.5em, null);
+	font-weight: $light;
+	span {
+		font-weight: $bold;
+		&::before {
+			content: "\A";
+			white-space: pre-line;
+		}
+	}
+}
+
+p {
+	font-weight: $light;
+	span {
+		&::before {
+			content: "\A";
+			white-space: pre-line;
+		}
+	}
+}
+
+.card-img {
+	&:first-of-type {
+		background-image: url(../../multimedia/images/icon-supervisor.svg);
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position: right bottom;
+	}
+	&:nth-of-type(2) {
+		background-image: url(../../multimedia/images/icon-team-builder.svg);
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position: right bottom;
+	}
+	&:nth-of-type(3) {
+		background-image: url(../../multimedia/images/icon-karma.svg);
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position: right bottom;
+	}
+	&:last-of-type {
+		background-image: url(../../multimedia/images/icon-calculator.svg);
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position: right bottom;
+	}
+}
