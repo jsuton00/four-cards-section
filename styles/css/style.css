@@ -1,3 +1,99 @@
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc( 16px + 8 * ((100vw - 320px) / 1600));
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+h1 {
+  font-size: 2.0736rem;
+}
+
+h1 {
+  font-size: 27.648px;
+}
+
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: calc( 27.648px + 26.352 * ((100vw - 320px) / 1600));
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h1 {
+    font-size: 54px;
+  }
+}
+
+h2 {
+  font-size: 1.728rem;
+}
+
+h2 {
+  font-size: 27.648px;
+}
+
+@media screen and (min-width: 320px) {
+  h2 {
+    font-size: calc( 27.648px + 26.352 * ((100vw - 320px) / 1600));
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h2 {
+    font-size: 54px;
+  }
+}
+
+h3 {
+  font-size: 1.44rem;
+}
+
+h3 {
+  font-size: 23.04px;
+}
+
+@media screen and (min-width: 320px) {
+  h3 {
+    font-size: calc( 23.04px + 12.96 * ((100vw - 320px) / 1600));
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 19.2px;
+}
+
+@media screen and (min-width: 320px) {
+  h4 {
+    font-size: calc( 19.2px + 4.8 * ((100vw - 320px) / 1600));
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h4 {
+    font-size: 24px;
+  }
+}
+
 body {
   background-color: #fafafa;
   font-family: "Poppins", sans-serif;
@@ -32,7 +128,7 @@ h1 span {
 
 h1 span::before {
   content: "\A";
-  white-space: pre-line;
+  white-space: pre;
 }
 
 p {
@@ -44,31 +140,64 @@ p span::before {
   white-space: pre-line;
 }
 
-.card-img:first-of-type {
+main {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em auto;
+}
+
+.card {
+  padding: 0.5m;
+  border-radius: 3.5%;
+}
+
+.card-body {
+  padding: 2.5em;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  color: #abadb5;
+  font-weight: 400;
+}
+
+.supervisor {
+  border-top: 5px solid #45d3d3;
   background-image: url(../../multimedia/images/icon-supervisor.svg);
+  background-position: 95% 95%;
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: right bottom;
+  background-size: 10%;
+  padding: 0.5em;
 }
 
-.card-img:nth-of-type(2) {
+.team-builder {
+  border-top: 5px solid #ea5353;
   background-image: url(../../multimedia/images/icon-team-builder.svg);
+  background-position: 95% 95%;
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: right bottom;
+  background-size: 10%;
+  padding: 0.5em;
+  margin: 0 0 0.5em 0;
 }
 
-.card-img:nth-of-type(3) {
+.karma {
+  border-top: 5px solid #fcaf4a;
   background-image: url(../../multimedia/images/icon-karma.svg);
+  background-position: 95% 95%;
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: right bottom;
+  background-size: 10%;
+  padding: 0.25em;
 }
 
-.card-img:last-of-type {
+.calculator {
+  border-top: 5px solid #549ef2;
   background-image: url(../../multimedia/images/icon-calculator.svg);
+  background-position: 95% 95%;
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: right bottom;
+  background-size: 10%;
+  padding: 0.5em;
 }
 /*# sourceMappingURL=style.css.map */
